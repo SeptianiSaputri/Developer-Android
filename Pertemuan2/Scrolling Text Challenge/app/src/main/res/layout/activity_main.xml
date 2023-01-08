@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/article_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary"
+        android:padding="10dp"
+        android:text="Beatles Anthology Vol. 1"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/article_heading"
+        tools:ignore="ScrollViewCount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize">
+
+        <TextView
+            android:id="@+id/article_subheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:lineSpacingExtra="5sp"
+            android:padding="10dp"
+            android:text="Behind That Locked Door: Beatles Rarities!"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In a vault deep inside Abbey Road Studios in London - p..."
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/comment_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Comment"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

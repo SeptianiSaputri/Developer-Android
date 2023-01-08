@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/operand_one_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type Operand 1"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/operand_two_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type Operand 2"
+        android:inputType="numberDecimal"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/operation_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onAdd"
+            android:text="Add"
+            tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/operation_sub_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_toEndOf="@id/operation_add_btn"
+            android:layout_toRightOf="@id/operation_add_btn"
+            android:onClick="onSub"
+            android:text="Sub"
+            tools:ignore="HardcodedText,RtlHardcoded,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/operation_div_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/operation_add_btn"
+            android:onClick="onDiv"
+            android:text="Div"
+            tools:ignore="HardcodedText,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/operation_mul_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/operation_add_btn"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@id/operation_add_btn"
+            android:layout_toRightOf="@id/operation_add_btn"
+            android:onClick="onMul"
+            android:text="Mul"
+            tools:ignore="HardcodedText,RtlHardcoded,UsingOnClickInXml" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/operation_result_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

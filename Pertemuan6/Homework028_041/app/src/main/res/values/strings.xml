@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Homework028_04.1</string>
+    <string name="froyo_order_message" />
+    <string name="ice_cream_order_message" />
+    <string name="donut_order_message" />
+    <string name="action_settings" />
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+</resources>

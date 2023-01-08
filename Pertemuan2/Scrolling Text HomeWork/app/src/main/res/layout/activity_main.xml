@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/article_heading"
+        android:background="#0027FF"
+        android:padding="2dp"
+        android:textColor="@android:color/white"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/article_heading"
+        tools:ignore="ScrollViewCount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        tools:ignore="ScrollViewSize">
+
+        <TextView
+            android:id="@+id/article_subheading"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Behind That Loocked Boor: Beatles Rarities!"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/artircle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:lineSpacingExtra="5sp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:text="In a vault deep inside Abbey Road Studios in London -p..."
+            tools:ignore="HardcodedText,InefficientWeight" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
